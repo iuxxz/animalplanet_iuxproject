@@ -8,6 +8,8 @@
     <style>
         /*Elementos arriba*/
         .elementos_fondo{
+            display: flex;
+            flex-wrap: wrap;
             background-color: #18532f;
         }
         .elementos-medio{
@@ -20,12 +22,12 @@
             margin-top: -2.5px;
         }
         .elementos-wrapper{
+            position: relative;
             border-radius: 5px;
             height: 30px;
-            width: 350px;
             display: flex;
             flex-direction: row;
-            margin-left: 40%;
+            margin-left: 210%;
             background-color: black;
             filter: opacity(30%);
         }
@@ -35,69 +37,89 @@
         .elementos-menu{
             flex-direction: row;
         }
+
         .elementos-icon{
-            margin-left: 45%;
-            height: auto;
-            flex-direction: row;
+            display: flex;
         }
         .elementos-icon-wrapper{
             background-color: #297c47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 300px;
         }
+
         .bienvenida{
             background-color: #24683d;
             display: block;
             margin-left: 1%;
+            flex-wrap: wrap;
         }
         .bienvenida-atras{
-            width: 80%;
             display: flex;
             justify-content: flex-start;
+            flex-wrap: wrap;
+            min-width: 300px;
         }
+
         .tipo-de-animales-fondo{
             background-color: #297c47;
             display: flex;
             align-items: center;
+            align-content: flex-start;
             justify-content: center;
-            height: 35vh;
+            height: auto;
         }
         .tipo-de-animales-adelante{
             display: flex;
-            justify-content: center;
         }
         .tipo-de-animales{
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            height: auto;
+            grid-column: auto;
+            flex-wrap: wrap;
+            min-width: 300px;
         }
         .tipo-de-animales-elementos{
             background-color: #24683d;
             margin: 5px;
+            padding: 5px;
+            text-align: center;
         }
+
         .documentales-fondo{
-            display: block;
+            display: flex;
             background-color: #24683d;
             align-items: center;
             justify-content: center;
+            align-items: center;
         }
         .documentales-adelante{
-            display: block;
+            display: flex;
             justify-content: center;
+            align-items: center;
         }
         .documentales{
             display:flex;
-            flex-direction: row;
-            justify-content: center;
+            height: auto;
+            grid-column: auto;
+            flex-wrap: wrap;
+            min-width: 300px;
             align-items: center;
         }
         .documentales-elementos{
             background-color: #297c47;
             width: 300px;
             height: 200px;
+            padding: 5px;
             margin: 5px;
+            align-items: center;
             font-size: x-small;
+            text-align: center;
         }
+
         .texto-importante-fondo{
+            display: flex;
             background-color: #297c47;
             height: 150px;
         }
@@ -111,13 +133,19 @@
             margin-top: 2%;
             margin-left: 6.8%;
         }
+
         .texto{
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
         }
         body{
             background-color: #24683d;
+        }
+        .home{
+            display: block;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
         }
         h1{
             color: white;
@@ -135,21 +163,7 @@
 
 </head>
 <body>
-    <div class="elementos_fondo">
-        <div class="elementos-medio"> 
-            <div class="elementos-wrapper">
-                <div class="elementos-buscar">
-                    <img src="img/icon_search.png" alt="Buscar" width="20" height="20" style="filter: opacity(50%); margin-left: 5px; margin-top: 5px;">
-                </div>
-                <div class="elementos-buscar">
-                    <h1 style="filter: opacity(50%); font-size: 15px; margin-left: 260px;">Buscar</h1>
-                </div>
-                <div class="elementos-iniciarsesion">
-                    <img src="img/icon_user.png" alt="Iniciar Sesión" width="20" height="20" style="filter: opacity(50%); margin-left: 735px;margin-top: 0.5%;">
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="home">
 
     <div class="elementos-icon-wrapper">
         <div class="elementos-icon">
@@ -240,7 +254,7 @@
 <div class="texto-importante-fondo">
     <div class="texto-importante-adelante">
         <div class="texto-importante">
-            <h1 style="font-size: 15px;margin-left: 45%;">Animal Planet Project by O.C.V.</h1>
+            <h1 style="font-size: 15px; text-align: center;">Animal Planet Project by O.C.V.</h1>
             <h2 style="font-size: 11px; text-align: center;">Esta página fue creada como parte de una tarea escolar para la materia de informática. Agradecemos a los creadores de las imágenes utilizadas y queremos enfatizar que se emplearon únicamente con fines educativos, respetando los derechos de autor y las normas éticas relacionadas con el uso de contenido externo.</h2>
         </div>
     </div>
