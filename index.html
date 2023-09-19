@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Animal Planet</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -55,35 +55,47 @@
         }
         .tipo-de-animales-fondo{
             background-color: #297c47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35vh;
         }
         .tipo-de-animales-adelante{
             display: flex;
+            justify-content: center;
         }
         .tipo-de-animales{
-            margin-top: 3.5%;
-            margin-left: -42%;
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         .tipo-de-animales-elementos{
             background-color: #24683d;
             margin: 5px;
         }
         .documentales-fondo{
+            display: block;
             background-color: #24683d;
+            align-items: center;
+            justify-content: center;
         }
         .documentales-adelante{
-            display: flex;
+            display: block;
+            justify-content: center;
         }
         .documentales{
-            margin-top: 3.5%;
-            margin-left: -42%;
-            display: flex;
+            display:flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         .documentales-elementos{
             background-color: #297c47;
+            width: 300px;
+            height: 200px;
             margin: 5px;
+            font-size: x-small;
         }
         .texto-importante-fondo{
             background-color: #297c47;
@@ -98,6 +110,11 @@
             flex-direction: column;
             margin-top: 2%;
             margin-left: 6.8%;
+        }
+        .texto{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         body{
             background-color: #24683d;
@@ -118,31 +135,28 @@
 
 </head>
 <body>
-<div>
     <div class="elementos_fondo">
         <div class="elementos-medio"> 
-
             <div class="elementos-wrapper">
                 <div class="elementos-buscar">
-                    <img src="img/icon_search.png" alt="img/icon_search.png" width="20" height="20" style="filter: opacity(50%); margin-top: 7px; margin-left: 25%;">
+                    <img src="img/icon_search.png" alt="Buscar" width="20" height="20" style="filter: opacity(50%);">
                 </div>
                 <div class="elementos-buscar">
-                    <h1 style="filter: opacity(50%); font-size: 15px; margin-left: 530%;">Buscar</h1>
+                    <h1 style="filter: opacity(50%); font-size: 15px;">Buscar</h1>
                 </div>
                 <div class="elementos-iniciarsesion">
-                    <img src="img/icon_user.png" alt="img/icon_user.png" width="20" height="20" style="filter: opacity(50%); margin-left: 1005px; margin-top: 6px;">
+                    <img src="img/icon_user.png" alt="Iniciar Sesión" width="20" height="20" style="filter: opacity(50%);">
                 </div>
                 <div class="elementos-menu">
-                    <img src="img/icon_menu.png" alt="img/icon_menu.png" width="20" height="20" style="filter: opacity(50%); margin-left: -1815px; margin-top: 6px;">
+                    <img src="img/icon_menu.png" alt="Menú" width="20" height="20" style="filter: opacity(50%);">
                 </div>
-            </div>
             </div>
         </div>
     </div>
 
     <div class="elementos-icon-wrapper">
         <div class="elementos-icon">
-            <img src="img/Animal_Planet_logo.png" alt="img/Animal_Planet_logo.png" width="150" height="80" style="margin: 10px;">
+            <img src="img/Animal_Planet_logo.png" alt="Animal Planet Logo" width="150" height="80">
         </div>
     </div>
 
@@ -164,9 +178,12 @@
     </div>
 </div>
 
+<div class="texto" style="background-color: #297c47;">
+    <h1>TIPOS DE ANIMALES</h1>
+</div>
+
 <div class="tipo-de-animales-fondo">
     <div class="tipo-de-animales-adelante">
-        <h1 style="margin-left: 41%;">TIPOS DE ANIMALES</h1>
         <div class="tipo-de-animales">
             <div class="tipo-de-animales-elementos">
                 <img src="img/Animales_Tipos_Mamiferos.png" alt="img/Animales_Tipos_Mamiferos.png" width="200" height="200">
@@ -196,25 +213,28 @@
     </div>
 </div>
 
+<div class="texto" style="background-color: #24683d;">
+    <h1>DOCUMENTALES</h1>
+</div>
+
 <div class="documentales-fondo">
     <div class="documentales-adelante">
-        <h1 style="margin-left: 42%;">DOCUMENTALES</h1>
         <div class="documentales">
             <div class="documentales-elementos">
                 <img src="img/doc_mar.png" alt="img/doc_mar.png" width="300" height="160">
-                <h1 style="margin-left: 22%; font-size: 22px; margin-left: 10%; margin-top: 5%;">Maravillas Submarinas</h1>
+                <h1 style="margin-left: 12.5%;">Maravillas Submarinas</h1>
             </div>
             <div class="documentales-elementos">
                 <img src="img/doc_delfines.png" alt="img/doc_delfines.png" width="300" height="160">
-                <h1 style="margin-left: 22%; font-size: 22px; margin-left: 7%; margin-top: 5%;">La Danza de los Delfines</h1>
+                <h1 style="margin-left: 12.5%;">La Danza de los Delfines</h1>
             </div>
             <div class="documentales-elementos">
                 <img src="img/doc_zorro.png" alt="img/doc_zorro.png" width="300" height="160">
-                <h1 style="margin-left: 22%; font-size: 22px; margin-left: 17%; margin-top: 5%;">Zorros en la noche</h1>
+                <h1 style="margin-left: 20%;">Zorros en la noche</h1>
             </div>
             <div class="documentales-elementos">
                 <img src="img/doc_pinguinos.png" alt="img/doc_pinguinos.png" width="300" height="160">
-                <h1 style="margin-left: 22%; font-size: 22px; margin-left: 3%; margin-top: 5%;">La verdad de los pingüinos</h1>
+                <h1 style="margin-left: 6.5%;">La verdad de los pingüinos</h1>
             </div>
         </div>
     </div>
